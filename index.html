@@ -138,6 +138,24 @@ blockquote.quote{font-family:var(--serif);font-style:italic;font-size:1.7rem;lin
 .glu__points span{font-size:.92rem;color:#d9c3b7}
 @media (max-width:900px){.glu__points{grid-template-columns:1fr}}
 
+
+/* AVALIACOES */
+.reviews__head{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:3rem}
+.gscore{display:inline-flex;align-items:center;gap:.8rem;background:#fff;border:1px solid var(--nude-2);border-radius:999px;padding:.6rem 1.3rem;margin-top:1rem;box-shadow:0 12px 30px -20px rgba(138,63,42,.4)}
+.gscore b{font-family:var(--serif);font-size:1.8rem;font-weight:500;color:var(--choc);line-height:1}
+.stars{color:#e8a33d;letter-spacing:2px;font-size:1rem}
+.gscore small{color:var(--muted);font-size:.85rem}
+.reviews{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.review{background:#fff;border:1px solid var(--nude-2);border-radius:18px;padding:1.6rem;display:flex;flex-direction:column;gap:1rem;transition:.3s}
+.review:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 20px 40px -25px rgba(138,63,42,.35)}
+.review p{font-family:var(--serif);font-size:1.2rem;line-height:1.4;color:var(--ink);flex:1}
+.review p:before{content:"“";display:block;font-size:2.6rem;line-height:.6;color:var(--gold);margin-bottom:.3rem}
+.review footer{display:flex;align-items:center;gap:.7rem;font-size:.88rem;color:var(--muted)}
+.review .av{width:36px;height:36px;border-radius:50%;background:var(--nude);color:var(--choc);display:grid;place-items:center;font-family:var(--serif);font-size:1.1rem}
+.review footer strong{display:block;color:var(--ink);font-weight:500}
+@media (max-width:1000px){.reviews{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.reviews{grid-template-columns:1fr}}
+
 /* PROCEDIMENTOS */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
 .card{background:#fff;border:1px solid var(--nude-2);border-radius:16px;padding:2rem;transition:.3s}
@@ -344,6 +362,23 @@ blockquote.quote{font-family:var(--serif);font-style:italic;font-size:1.7rem;lin
       <p class="testi__quote">“Eu me <em>reencontrei</em>.”</p>
       <p>Existem elogios que aquecem o coração. Mas poucos são tão bonitos quanto uma paciente dizer que voltou a se reconhecer no espelho. É para isso que a clínica existe.</p>
     </div>
+  </div>
+</section>
+
+<section class="section" id="avaliacoes">
+  <div class="container">
+    <div class="reviews__head reveal">
+      <p class="eyebrow">Avaliações</p>
+      <h2>O que as pacientes <em>dizem</em></h2>
+      <div class="gscore"><b>5,0</b><span><span class="stars">★★★★★</span><br/><small>30 avaliações no Google</small></span></div>
+    </div>
+    <div class="reviews">
+      <article class="review reveal"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Uma profissional extremamente competente, cuidadosa e dedicada. Realiza um trabalho impecável, com atenção aos detalhes e resultados visíveis, sempre priorizando o bem-estar e a satisfação do cliente. Excelente atendimento e profissionalismo exemplar.</p><footer><span class="av">C</span><span><strong>Cledna S.</strong>Avaliação no Google</span></footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>A dra Michelle é um ser humano incrível, paciente, Iluminada atende todos com muito carinho</p><footer><span class="av">I</span><span><strong>Isabella F.</strong>Avaliação no Google</span></footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Dra Michele é simplesmente maravilhosa, atendimento de excelência e muito competente no que faz!</p><footer><span class="av">R</span><span><strong>Rapha S.</strong>Avaliação no Google</span></footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 estrelas">★★★★★</div><p>Muito boa uma profissional incrível atenciosa, dedicada e muito simpática</p><footer><span class="av">G</span><span><strong>Geovane A.</strong>Avaliação no Google</span></footer></article>
+    </div>
+    <div class="center"><a href="https://maps.app.goo.gl/qPo2wt3yLJDN5DXSA" class="btn btn--ghost" target="_blank" rel="noopener">Ver todas no Google</a></div>
   </div>
 </section>
 
